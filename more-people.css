@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 170px 10px 200px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    color: #E36414;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #E36414;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.navigation a:hover{
+    color: #0F4C5C;
+}
+
+section{
+    padding: 35px;
+}
+
+.people {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E36414;
+    background-size:cover;
+    background-position: center;
+}
+.allcontainer{
+    margin-top: 5em;
+    width: 100%;
+    
+}
+.people .content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.person-card {
+    cursor: pointer;
+    background-color: #F67D31;
+    min-height: 14em;
+    width: 18em;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px;
+    
+    transition: 0.7s ease;
+}
+
+.person-card:hover {
+   transform: scale(1.1);
+   display: flex;
+   align-items: center;
+}
+
+.person-card:hover .person-image {
+    display: none;
+ }
+
+ .person-card:hover .title{
+    display: none;
+ }
+
+ .person-card:hover .description{
+    display: flex;
+ }
+
+ .person-card .description{
+    display: none;
+ }
+
+.person-image img{
+    width: 100%
+}
+
+.person-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+.title {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.allcontainer h2{
+    display: flex;
+    
+    justify-content: center;
+}
+.person-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.person-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.people h2{
+   
+    color: #0F4C5C;
+    font-size: 3em;
+    font-weight: 700;
+    line-height:2.9em;
+}
+
+
+.person-info h3{
+    font-size: 1.6em;
+    color: #0F4C5C;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.person-info  span{
+    font-size: 0.7em;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: -16px;
+    text-align: center;
+}
+
+.toggle-button{
+    display: none;
+
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    display: none;
+    align-items: center;
+    height: 21px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.toggle-button i{
+    border-radius: 10px;
+    color: #E36414;
+    text-decoration-line: none;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (max-width:1023px){
+
+    .home{
+        background: #004455;
+        display: inline-table;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .people{
+        display: inline-table;
+        
+        align-items: center;
+    }
+    .people .allcontainer{
+       display: flex;
+        align-items: center;
+    }
+    .people .content{ margin-right: 15px;}
+
+    .activities {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .announcements{
+        display: inline-table;
+        margin-right: 30px;
+    }
+    .announcements .text{
+        
+        font-size: 15px
+
+    }
+    .activities{
+        display: inline-table;
+    }
+
+
+    .navigation a{
+        padding-left: 3px;
+    }
+    .announcements .allcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .activities .activity-content{
+        display: inline-table;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 30px;
+        display: inline-table;
+        
+        
+    }
+    .home{
+        background-color: #004455;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header{
+        padding: 12px 20px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 100%;
+        z-index: 999;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media (max-width:641px){
+
+    .home{
+        background: #004455;
+        display: inline-table;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .toggle-button{display: flex;}
+    /* .navigation{display: none;} */
+    .people{
+        display: inline-table;
+        
+        align-items: center;
+    }
+    .people .allcontainer{
+       display: flex;
+        align-items: center;
+    }
+    .people .content{ margin-right: 15px;}
+
+    .activities .allcontainer{
+        display: inline-table;
+    }
+
+    .announcements{
+        display: inline-table;
+        margin-right: 30px;
+    }
+    .announcements .text{
+        
+        font-size: 15px
+
+    }
+    .activities{
+        display: inline-table;
+    }
+
+    .activities .activity-content{
+        display: inline-table;
+        align-items: center;
+    }
+    header{
+        padding: 12px 20px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 100%;
+        z-index: 999;
+        align-items: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navigation{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        }
+
+    .navigation a{
+        padding-left: 3px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navigation a:hover{
+        background-color: #eee;
+    }
+
+    .navigation.active{
+        display: flex;
+    }
+    .announcements .allcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 30px;
+        display: inline-table;
+        
+        
+    }
+    .home{
+        background-color: #004455;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    body{
+        font-size: 12px;
+    }
+
+    section{
+        padding: 80px 30px;}
+
+        
+        
+    
+    
+    .home{
+        background-color: #004455;
+    }
+    .people{
+        display: inline-table;
+        
+        align-items: center;
+    }
+    .people .allcontainer{
+       display: inline-block;
+       padding-left: 35px;
+    }
+
+    .activities {
+        display: flex;
+    }
+    .activities.allcontainer{
+        display: inline-table;
+    }
+
+    .announcements{
+        display: inline-table;
+        margin-right: 30px;
+    }
+    .announcements .text{
+        
+        font-size: 10px
+
+    }
+    
+
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+    header{
+        padding: 12px 20px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 100%;
+        z-index: 999;
+        align-items: center;
+        background-repeat: no-repeat;
+        width: 95%;
+    }
+    section{
+        padding: 80px 30px;
+        display: inline-table;
+        
+        
+    }
+    .home{
+        background-color: #004455;
+    }
+     .home{
+        background-color: #004455;
+    }
+
+    .home{
+        background-color: #004455;
+    }
+    .people{
+        display: inline-table;
+        
+        align-items: center;
+    }
+    .people .allcontainer{
+       display: inline-block;
+       padding-left: 35px;
+    }
+
+    .activities .allcontainer{
+        display: inline-table;
+    }
+
+    .announcements{
+        display: inline-table;
+        margin-right: 30px;
+    }
+    .announcements .text{
+        
+        font-size: 10px
+
+    }
+}

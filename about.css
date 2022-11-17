@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 170px 10px 200px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    color: #E36414;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #E36414;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.navigation a:hover{
+    color: #0F4C5C;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background:  url("images/about_bg.png");
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+
+
+.about h2{
+    color: #E36414;
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height:2.9em;
+    
+}
+
+.about p{
+    display: inline-block;
+    margin-top: -1.3em;
+    font-size: 1.6em;
+    color: #fff;
+    margin-left: 0.2em;
+
+
+}
+
+.card {
+    background-color: #00313E;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 20px;
+    padding:5.5em 5em;
+    margin: 1em;
+    transition: 0.7s ease;
+}
+
+.toggle-button{
+    display: none;
+
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    display: none;
+    align-items: center;
+    height: 21px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.toggle-button i{
+    border-radius: 10px;
+    color: #E36414;
+    text-decoration-line: none;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #E36414;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.navigation a:hover{
+    color: #0F4C5C;
+}
+
+
+.card:hover{
+    transform: scale(1.05);
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .about{
+        display: inline-table;
+        
+    }
+    
+    
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .announcements .allcontainer{
+        display: flex;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+   
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+
+    .navigation{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    header{
+        padding: 12px 20px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 100%;
+        z-index: 999;
+        align-items: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        }
+
+    .navigation a{
+        padding-left: 3px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navigation a:hover{
+        background-color: #eee;
+    }
+
+    .navigation.active{
+        display: flex;
+    }
+
+    .toggle-button{display: flex;}
+
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .vision{
+        padding: 0em 2em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    .about{
+        display: inline-table;
+        
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+
+    .navigation{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        }
+
+    .navigation a{
+        padding-left: 3px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navigation a:hover{
+        background-color: #eee;
+    }
+
+    .navigation.active{
+        display: flex;
+    }
+    .about{
+        display: inline-table;
+        
+    }
+    .toggle-button{display: flex;}
+
+}
